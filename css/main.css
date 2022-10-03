@@ -511,14 +511,14 @@ img {
 @media screen and (max-width: 767px) {
   .hero {
     width: 480px;
-    background-color: var(--hero-footer-bkg-color);
+    background-color: var(--secondary-black-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     padding: 118px 0 118px 0;
   }
-  .hero__text {
+  .hero__title {
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -531,6 +531,221 @@ img {
   }
 }
 
+
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: #c4c4c4;
+    background-color: var(--secondary-black-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 118px 0 118px 0;
+  }
+  .hero__title {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    color:var(--primary-white-color) ;
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: var(--secondary-black-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-fone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 200px 0 200px 0;
+  }
+  .hero__text {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--some-text-color);
+    margin-bottom: 30px;
+  }
+}
+.hero__modal-open-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color:var(--primary-white-color) ;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color var(--transition);
+}
+.hero__modal-open-btn:hover, .hero__modal-open-btn:focus {
+  background-color: var(--modal-open-btn-hover);
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .hidden {
+    padding: 60px 0 60px 0;
+  }
+  .special__item {
+    width: 450px;
+  }
+  .our-features-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .special__superio {
+    width: 450px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .special {
+    background: var(--primary-bg-color);
+  }
+  .special__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  .special-item {
+    width: 450px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--tertiary-text-color);
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .hidden {
+    padding: 60px 0 60px 0;
+  }
+  .special__item {
+    width: 354px;
+  }
+  .our-features-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .special__superio {
+    width: 354px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .special {
+    background: var(--primary-bg-color);
+  }
+  .special__features-list {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .special__features-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+  .special__features-list .item {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--tertiary-text-color);
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .hidden {
+    padding: 94px 0 94px 0;
+  }
+  .special__item {
+    width: 270px;
+  }
+  .our-features-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .special__superio {
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .special {
+    background: var(--primary-bg-color);
+  }
+  .special__features-list {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+  .special__features-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+  }
+  .special__features-list .item  {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--tertiary-text-color);
+  }
+}
 
 
 
@@ -717,42 +932,7 @@ color: var(--accent-color);
 
 
 
-
-
-
-
-/*Header*/
-
-
-
-/*Hero*/
-
-.hero {
-  max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img-fone.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  margin-top: 0;
-  margin: 0px auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
-}
-
 h1,h2,h3 { margin: 0px;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-
-  color:var(--primary-white-color) ;
-  
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .hero__button-primary {
